@@ -1,5 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500;600;700&display=swap');
 
+@import 'variables.scss';
+@import 'mixins.scss';
+
+html {
+  font-size: 16px;
+}
+
 body {
-  // background-color: red;
+  background-color: $background-white;
+  font-family: $main-font;
+}
+
+.wrapper {
+  display: flex;
+
+  .side-nav {
+    width: 110px;
+    border-right: 2px solid $lighter-grey;
+
+    .logo {
+      margin-bottom: 5em;
+      padding: 2em 0;
+
+      img {
+        height: 4em;
+        margin: 0 auto;
+      }
+    }
+
+    .menu {
+      ul {
+        li {
+          margin-bottom: 3.6em;
+          a {
+            display: block;
+            position: relative;
+
+            img {
+              height: 1.7em;
+              margin: 0 auto;
+              filter: grayscale(1);
+            }
+
+            .stroke {
+              height: 1.7em;
+              width: 3px;
+              border-radius: 6px;
+              background-color: $dark-blue;
+              position: absolute;
+              right: 0;
+              top: 0;
+              overflow: hidden;
+              display: none;
+
+              .half {
+                height: 50%;
+                width: inherit;
+                background-color: $normal-green;
+                display: block;
+                position: absolute;
+                bottom: 0;
+              }
+            }
+          }
+
+          &.active {
+            a {
+              img {
+                filter: grayscale(0);
+              }
+
+              .stroke {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
