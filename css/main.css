@@ -54,11 +54,60 @@ body {
   position: absolute;
   bottom: 0;
 }
+.wrapper .side-nav .menu ul li:hover a img {
+  filter: grayscale(0);
+}
 .wrapper .side-nav .menu ul li.active a img {
   filter: grayscale(0);
 }
 .wrapper .side-nav .menu ul li.active a .stroke {
   display: block;
+}
+.wrapper .content {
+  width: 100%;
+}
+.wrapper .content .main {
+  height: 100vh;
+  padding: 2.5em 3em 0;
+  border-right: 2px solid #ebf1f5;
+}
+.wrapper .content .main header .title h1 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 2.55em;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 1.2em;
+  color: #082b2f;
+}
+.wrapper .content .main header .title span {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  display: block;
+  color: #627f83;
+  margin-top: 0.4em;
+}
+.wrapper .content .main header .search-bar .grp {
+  position: relative;
+}
+.wrapper .content .main header .search-bar .grp img {
+  height: 1.35em;
+  display: inline-block;
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.wrapper .content .main header .search-bar .grp input {
+  display: block;
+  padding: 14px 50px 14px 54px;
+  border-radius: 50px;
+  width: 100%;
+  outline: none;
+  background: linear-gradient(90deg, #edf6fb, #f4f7fc);
+}
+.wrapper .content .profile-area {
+  height: 100vh;
 }
 
 /*# sourceMappingURL=main.css.map */
