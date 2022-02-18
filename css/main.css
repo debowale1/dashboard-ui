@@ -106,6 +106,159 @@ body {
   outline: none;
   background: linear-gradient(90deg, #edf6fb, #f4f7fc);
 }
+.wrapper .content .main .dashboard-area {
+  margin-top: 3em;
+}
+.wrapper .content .main .dashboard-area .productivity-listing .pro-bar {
+  background-color: #e2f297;
+  padding: 0.95em;
+  color: #082b2f;
+  margin-bottom: 1.2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 1em;
+  box-sizing: border-box;
+  box-shadow: 0 6px 10px rgba(1, 86, 91, 0.05);
+}
+.wrapper .content .main .dashboard-area .productivity-listing .pro-bar:nth-child(2) {
+  background-color: #5aba8a;
+  color: #fafafa;
+}
+.wrapper .content .main .dashboard-area .productivity-listing .pro-bar:nth-child(2) .chart svg {
+  fill: #e2f297;
+  transform: scale(-1, 1);
+}
+.wrapper .content .main .dashboard-area .productivity-listing .pro-bar:nth-child(2) .time-area::before {
+  background-color: #e2f297;
+}
+.wrapper .content .main .dashboard-area .productivity-listing .pro-bar:nth-child(3) {
+  background-color: #01565b;
+  color: #fafafa;
+}
+.wrapper .content .main .dashboard-area .productivity-listing .pro-bar:nth-child(3) .chart svg {
+  fill: #e2f297;
+  transform: scale(-1, 1) rotate(180deg);
+}
+.wrapper .content .main .dashboard-area .productivity-listing .pro-bar:nth-child(3) .time-area::before {
+  background-color: #627f83;
+}
+.wrapper .content .main .dashboard-area .percent-area {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  width: 50%;
+}
+.wrapper .content .main .dashboard-area .percent-area .date-tag {
+  display: flex;
+  justify-content: initial;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fafafa;
+  padding: 0.6em 1.25em;
+  border-radius: 0.7em;
+  box-sizing: border-box;
+  margin-right: 2.5em;
+  position: relative;
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.1);
+}
+.wrapper .content .main .dashboard-area .percent-area .date-tag .date,
+.wrapper .content .main .dashboard-area .percent-area .date-tag .day {
+  display: block;
+  position: relative;
+  z-index: 99;
+}
+.wrapper .content .main .dashboard-area .percent-area .date-tag .day {
+  text-transform: capitalize;
+  font-size: 0.875em;
+  font-weight: 500;
+  color: #627f83;
+}
+.wrapper .content .main .dashboard-area .percent-area .date-tag .date {
+  text-transform: capitalize;
+  font-size: 2em;
+  font-weight: 600;
+  color: #082b2f;
+}
+.wrapper .content .main .dashboard-area .percent-area .date-tag::after {
+  content: "";
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-color: #fafafa;
+  position: absolute;
+  top: 50%;
+  right: -18px;
+  border-radius: 4px;
+  transform: translate(0, -50%) rotate(45deg) skew(25deg, 25deg);
+}
+.wrapper .content .main .dashboard-area .percent-area .fancy-chart .chart-title {
+  text-transform: capitalize;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 0.875em;
+  font-weight: 600;
+}
+.wrapper .content .main .dashboard-area .percent-area .fancy-chart .chart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  position: relative;
+  top: 0.7em;
+}
+.wrapper .content .main .dashboard-area .percent-area .fancy-chart .chart svg {
+  fill: #01565b;
+  height: 1em;
+  width: 5.6em;
+}
+.wrapper .content .main .dashboard-area .percent-area .fancy-chart .chart .percent-count {
+  display: block;
+  position: relative;
+  left: 1em;
+  bottom: 0.5em;
+  background-color: #fafafa;
+  padding: 3px 9px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-size: 0.85em;
+  font-weight: 600;
+  color: #082b2f;
+}
+.wrapper .content .main .dashboard-area .time-area {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: initial;
+  width: 50%;
+  position: relative;
+}
+.wrapper .content .main .dashboard-area .time-area .grp {
+  margin-left: 2em;
+}
+.wrapper .content .main .dashboard-area .time-area .grp .title {
+  text-transform: capitalize;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 0.875em;
+  font-weight: 600;
+}
+.wrapper .content .main .dashboard-area .time-area .grp .time {
+  text-transform: capitalize;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.125em;
+  font-weight: 700;
+}
+.wrapper .content .main .dashboard-area .time-area::before {
+  content: "";
+  display: block;
+  height: 50%;
+  width: 1px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-color: #5aba8a;
+}
 .wrapper .content .profile-area {
   height: 100vh;
 }

@@ -136,6 +136,164 @@ body {
           }
         }
       }
+
+      .dashboard-area {
+        margin-top: 3em;
+        .productivity-listing {
+          .pro-bar {
+            background-color: $light-green;
+            padding: 0.95em;
+            color: $secondary-text;
+            margin-bottom: 1.2em;
+            @include setFlex(space-between, center, row);
+            border-radius: 1em;
+            box-sizing: border-box;
+            box-shadow: 0 6px 10px rgb(1 86 91 / 5%);
+
+            &:nth-child(2) {
+              background-color: $normal-green;
+              color: $background-white;
+
+              .chart {
+                svg {
+                  fill: $light-green;
+                  transform: scale(-1, 1);
+                }
+              }
+
+              .time-area {
+                &::before {
+                  background-color: $light-green;
+                }
+              }
+            }
+            &:nth-child(3) {
+              background-color: $dark-blue;
+              color: $background-white;
+
+              .chart {
+                svg {
+                  fill: $light-green;
+                  transform: scale(-1, 1) rotate(180deg);
+                }
+              }
+
+              .time-area {
+                &::before {
+                  background-color: $primary-text;
+                }
+              }
+            }
+          }
+        }
+
+        .percent-area {
+          @include setFlex(start, center, row);
+          width: 50%;
+
+          .date-tag {
+            @include setFlex(initial, center, column);
+            background-color: $background-white;
+            padding: 0.6em 1.25em;
+            border-radius: 0.7em;
+            box-sizing: border-box;
+            margin-right: 2.5em;
+            position: relative;
+            box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.1);
+
+            .date,
+            .day {
+              display: block;
+              position: relative;
+              z-index: 99;
+            }
+
+            .day {
+              text-transform: capitalize;
+              font-size: 0.875em;
+              font-weight: 500;
+              color: $primary-text;
+            }
+            .date {
+              text-transform: capitalize;
+              font-size: 2em;
+              font-weight: 600;
+              color: $secondary-text;
+            }
+            &::after {
+              content: '';
+              display: block;
+              height: 40px;
+              width: 40px;
+              background-color: $background-white;
+              position: absolute;
+              top: 50%;
+              right: -18px;
+              border-radius: 4px;
+              transform: translate(0, -50%) rotate(45deg) skew(25deg, 25deg);
+            }
+          }
+          .fancy-chart {
+            .chart-title {
+              text-transform: capitalize;
+              @include setFonts($main-font, 0.875em, 600);
+            }
+            .chart {
+              @include setFlex(space-between, flex-start, row);
+              position: relative;
+              top: 0.7em;
+
+              svg {
+                fill: $dark-blue;
+                height: 1em;
+                width: 5.6em;
+              }
+              .percent-count {
+                display: block;
+                position: relative;
+                left: 1em;
+                bottom: 0.5em;
+                background-color: $background-white;
+                padding: 3px 9px;
+                box-sizing: border-box;
+                border-radius: 20px;
+                font-size: 0.85em;
+                font-weight: 600;
+                color: $secondary-text;
+              }
+            }
+          }
+        }
+
+        .time-area {
+          @include setFlex(flex-start, flex-start, initial);
+          width: 50%;
+          position: relative;
+
+          .grp {
+            margin-left: 2em;
+            .title {
+              text-transform: capitalize;
+              @include setFonts($main-font, 0.875em, 600);
+            }
+            .time {
+              text-transform: capitalize;
+              @include setFonts($main-font, 1.125em, 700);
+            }
+          }
+
+          &::before {
+            content: '';
+            display: block;
+            height: 50%;
+            width: 1px;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            background-color: $normal-green;
+          }
+        }
+      }
     }
     .profile-area {
       height: 100vh;
