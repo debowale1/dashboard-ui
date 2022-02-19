@@ -412,6 +412,174 @@ body {
             }
           }
         }
+
+        .upcoming-activity {
+          .h-title {
+            text-align: left;
+          }
+
+          .activity-chart {
+            position: relative;
+            display: flex;
+            margin-top: 4em;
+            height: 27.9em;
+            // flex-direction: row-reverse;
+            table {
+              height: 25.6em;
+              position: relative;
+              left: 60px;
+              thead {
+                .graph-time {
+                  th {
+                    position: relative;
+                    text-align: left;
+                    left: -20px;
+                    bottom: 1.75em;
+                    @include setFonts($main-font, 0.9em, 600);
+                    color: $primary-text;
+                  }
+                }
+              }
+
+              tbody {
+                .graph-col {
+                  .bar {
+                    width: 5em;
+                    border-left: 2px solid $lighter-grey;
+                    position: relative;
+                  }
+                }
+              }
+            }
+
+            .graph-days {
+              overflow: hidden;
+              position: absolute;
+              top: 1.75em;
+              bottom: 0;
+
+              .g-day {
+                height: 2.5em;
+                margin-bottom: 1.4em;
+                @include setFlex(initial, center, initial);
+
+                .title {
+                  width: 2.2em;
+                  @include setFonts($main-font, 0.9em, 500);
+                  color: $primary-text;
+                  text-transform: capitalize;
+
+                  &.active {
+                    font-weight: 700;
+                    color: $dark-blue;
+                  }
+                }
+
+                .tag {
+                  position: relative;
+                  left: 1.65em;
+
+                  .content {
+                    background-color: $light-green;
+                    height: 3em;
+                    padding: 0 2em;
+                    @include setFlex(center, center, initial);
+                    text-align: center;
+                    border-radius: 0.8em;
+
+                    .tag-title {
+                      @include setFonts($main-font, 0.9em, 600);
+                      color: $dark-blue;
+                      position: relative;
+
+                      &::before {
+                        content: '';
+                        position: absolute;
+                        width: 0.4em;
+                        height: 0.4em;
+                        border-radius: 50%;
+                        top: 50%;
+                        transform: translate(0, -50%);
+                        left: -1.2em;
+                        display: block;
+                        background-color: $dark-blue;
+                      }
+                    }
+
+                    &::after {
+                      content: '';
+                      display: block;
+                      width: 28px;
+                      height: 28px;
+                      border-radius: 4px;
+                      background-color: $light-green;
+                      position: absolute;
+                      right: -9px;
+                      top: 50%;
+                      transform: translate(0, -50%) rotate(45deg)
+                        skew(5deg, 5deg);
+                    }
+                  }
+                }
+
+                &:nth-child(4) {
+                  .tag {
+                    left: 16.7em;
+                    .content {
+                      background-color: $normal-green;
+                      &::after {
+                        background-color: $normal-green;
+                      }
+                    }
+
+                    .tag-title {
+                      color: $background-white;
+                      &::before {
+                        background-color: $background-white;
+                      }
+                    }
+                  }
+                }
+                &:nth-child(5) {
+                  .tag {
+                    left: 11em;
+                    .content {
+                      background-color: $dark-blue;
+                      &::after {
+                        background-color: $dark-blue;
+                      }
+                    }
+
+                    .tag-title {
+                      color: $light-green;
+                      &::before {
+                        background-color: $light-green;
+                      }
+                    }
+                  }
+                }
+                &:nth-child(7) {
+                  .tag {
+                    left: 21.6em;
+                    .content {
+                      background-color: $off-blue;
+                      &::after {
+                        background-color: $off-blue;
+                      }
+                    }
+
+                    .tag-title {
+                      color: $dark-blue;
+                      &::before {
+                        background-color: $dark-blue;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
     .profile-area {
