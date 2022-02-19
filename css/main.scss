@@ -229,7 +229,7 @@ body {
               position: absolute;
               top: 50%;
               right: -18px;
-              border-radius: 4px;
+              border-radius: 6px;
               transform: translate(0, -50%) rotate(45deg) skew(25deg, 25deg);
             }
           }
@@ -291,6 +291,125 @@ body {
             top: 50%;
             transform: translate(0, -50%);
             background-color: $normal-green;
+          }
+        }
+
+        .h-title {
+          @include setFonts($main-font, 1.75em, 600);
+          color: $secondary-text;
+          text-align: center;
+        }
+
+        .monthly-statistics {
+          .statistics-chart {
+            width: 10.5em;
+            height: 10.5em;
+            margin: 0 auto;
+            margin-top: 1.5em;
+            margin-bottom: 1.65em;
+            position: relative;
+            @include setFlex(center, center, initial);
+
+            svg {
+              fill: none;
+              stroke: $dark-blue;
+              stroke-width: 0.1em;
+              stroke-dasharray: 58px;
+              stroke-linecap: round;
+              transform: rotate(65deg);
+              position: absolute;
+              z-index: 99;
+
+              &:nth-child(2) {
+                stroke: $normal-green;
+                transform: rotate(35deg);
+                z-index: 98;
+              }
+              &:nth-child(3) {
+                stroke: $light-green;
+                transform: rotate(0deg);
+                z-index: 97;
+              }
+              &:nth-child(4) {
+                stroke: $off-blue;
+                transform: rotate(0deg);
+                stroke-dasharray: 100px;
+                z-index: 96;
+              }
+            }
+
+            .decal-circle {
+              width: 4.5em;
+              height: 4.5em;
+              border-radius: 50%;
+              display: inline-block;
+              background-color: $light-green;
+              position: absolute;
+            }
+
+            .rocket {
+              height: 5em;
+              position: absolute;
+              bottom: 1em;
+            }
+          }
+
+          .statistics-progress {
+            @include setFlex(space-between, initial, column);
+            height: 9.3em;
+
+            .stat {
+              .top-area {
+                @include setFlex(space-between, initial, initial);
+                .stat-title {
+                  color: $primary-text;
+                  font-weight: 500;
+                }
+
+                .stat-percentage {
+                  color: $secondary-text;
+                  font-weight: 700;
+                }
+              }
+
+              .stat-line {
+                margin-top: 0.35em;
+
+                .outer {
+                  display: block;
+                  width: 100%;
+                  height: 0.4em;
+                  border-radius: 25px;
+                  background-color: $lighter-grey;
+                  overflow: hidden;
+
+                  .inner {
+                    display: block;
+                    height: inherit;
+                    width: 40%;
+                    border-radius: 25px;
+                    background-color: $normal-green;
+                  }
+                }
+              }
+
+              &:nth-child(2) {
+                .outer {
+                  .inner {
+                    width: 80%;
+                    background-color: $dark-blue;
+                  }
+                }
+              }
+              &:nth-child(3) {
+                .outer {
+                  .inner {
+                    width: 25%;
+                    background-color: $light-green;
+                  }
+                }
+              }
+            }
           }
         }
       }
