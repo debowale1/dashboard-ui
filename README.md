@@ -1,6 +1,6 @@
 # Description
 
-A productivity dashboard conversion
+A productivity dashboard conversion. this is just the desktop version.
 
 # Author
 

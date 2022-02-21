@@ -235,7 +235,7 @@ body {
   position: relative;
 }
 .wrapper .content .main .dashboard-area .time-area .grp {
-  margin-left: 2em;
+  margin-left: 3em;
 }
 .wrapper .content .main .dashboard-area .time-area .grp .title {
   text-transform: capitalize;
@@ -464,6 +464,41 @@ body {
   right: -9px;
   top: 50%;
   transform: translate(0, -50%) rotate(45deg) skew(5deg, 5deg);
+}
+.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day .tag .tag-stroke {
+  height: 16.3em;
+  background: linear-gradient(0deg, #e2f297, #01565b);
+  width: 2px;
+  position: absolute;
+  right: 45%;
+  top: 4.5em;
+}
+.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day .tag .tag-stroke::before {
+  content: "";
+  width: 0.55em;
+  height: 0.55em;
+  border-radius: 50%;
+  background-color: #01565b;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 99;
+}
+.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day .tag .tag-stroke::after {
+  content: "";
+  width: 1.4em;
+  height: 1.4em;
+  border: 1px solid #01565b;
+  border-radius: 50%;
+  background-color: transparent;
+  display: block;
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 99;
 }
 .wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day:nth-child(4) .tag {
   left: 16.7em;

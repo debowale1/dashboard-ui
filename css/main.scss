@@ -271,7 +271,7 @@ body {
           position: relative;
 
           .grp {
-            margin-left: 2em;
+            margin-left: 3em;
             .title {
               text-transform: capitalize;
               @include setFonts($main-font, 0.875em, 600);
@@ -519,6 +519,55 @@ body {
                       transform: translate(0, -50%) rotate(45deg)
                         skew(5deg, 5deg);
                     }
+                  }
+
+                  .tag-stroke {
+                    height: 16.3em;
+                    background: linear-gradient(0deg, $light-green, $dark-blue);
+                    width: 2px;
+                    position: absolute;
+                    right: 45%;
+                    top: 4.5em;
+
+                    &::before {
+                      content: '';
+                      width: 0.55em;
+                      height: 0.55em;
+                      border-radius: 50%;
+                      background-color: $dark-blue;
+                      display: block;
+                      position: absolute;
+                      top: 0;
+                      left: 50%;
+                      transform: translate(-50%, 0);
+                      z-index: 99;
+                    }
+                    &::after {
+                      content: '';
+                      width: 1.4em;
+                      height: 1.4em;
+                      border: 1px solid $dark-blue;
+                      border-radius: 50%;
+                      background-color: transparent;
+                      display: block;
+                      position: absolute;
+                      top: -7px;
+                      left: 50%;
+                      transform: translate(-50%, 0);
+                      z-index: 99;
+                    }
+
+                    // .inner {
+                    //   position: absolute;
+                    //   bottom: 0;
+                    //   height: 100%;
+                    //   width: inherit;
+                    //   background: linear-gradient(
+                    //     0deg,
+                    //     $light-green,
+                    //     transparent
+                    //   );
+                    // }
                   }
                 }
 
