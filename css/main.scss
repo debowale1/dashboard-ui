@@ -629,6 +629,37 @@ body {
             }
           }
         }
+
+        .upcoming-schedule {
+          text-align: center;
+          position: relative;
+
+          .h-title {
+            text-align: left;
+          }
+
+          .schedule-list {
+            margin-top: 4em;
+
+            .schedule {
+              icon {
+                img {
+                }
+              }
+            }
+
+            .details {
+              .title {
+              }
+
+              .status {
+              }
+            }
+
+            .time {
+            }
+          }
+        }
       }
     }
     .profile-area {
