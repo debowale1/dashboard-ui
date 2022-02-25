@@ -631,7 +631,7 @@ body {
         }
 
         .upcoming-schedule {
-          text-align: center;
+          // text-align: center;
           position: relative;
 
           .h-title {
@@ -642,22 +642,60 @@ body {
             margin-top: 4em;
 
             .schedule {
-              icon {
+              @include setFlex(flex-start, center, initial);
+              position: relative;
+              margin-bottom: 2.7em;
+              .icon {
+                border: 2px solid $darker-grey;
+                display: inline-block;
+                border-radius: 50%;
+                padding: 0.7em;
+
                 img {
+                  height: 1.8em;
                 }
               }
             }
 
             .details {
+              text-transform: capitalize;
+              margin-left: 1.8em;
               .title {
+                font-size: 1.3em;
+                font-weight: 600;
+                color: $secondary-text;
+                margin-bottom: 0.2em;
               }
 
               .status {
+                font-weight: 500;
+                color: $primary-text;
               }
             }
 
             .time {
+              position: absolute;
+              right: 0;
+              top: 0.5em;
+              font-size: 0.9em;
+              font-weight: 600;
+              color: $primary-text;
             }
+          }
+
+          .all-activity-btn {
+            display: inline-block;
+            background-color: $dark-blue;
+            color: $light-green;
+            font-size: 1.1em;
+            padding: 0.8em 2.5em;
+            border-radius: 50px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            box-shadow: 0 10px 26px rgb(1 86 91 / 30%);
+            margin-top: 1em;
+            text-transform: capitalize;
           }
         }
       }

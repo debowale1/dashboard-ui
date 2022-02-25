@@ -546,7 +546,6 @@ body {
   background-color: #01565b;
 }
 .wrapper .content .main .dashboard-area .upcoming-schedule {
-  text-align: center;
   position: relative;
 }
 .wrapper .content .main .dashboard-area .upcoming-schedule .h-title {
@@ -554,6 +553,59 @@ body {
 }
 .wrapper .content .main .dashboard-area .upcoming-schedule .schedule-list {
   margin-top: 4em;
+}
+.wrapper .content .main .dashboard-area .upcoming-schedule .schedule-list .schedule {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: initial;
+  position: relative;
+  margin-bottom: 2.7em;
+}
+.wrapper .content .main .dashboard-area .upcoming-schedule .schedule-list .schedule .icon {
+  border: 2px solid #e0e0e0;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 0.7em;
+}
+.wrapper .content .main .dashboard-area .upcoming-schedule .schedule-list .schedule .icon img {
+  height: 1.8em;
+}
+.wrapper .content .main .dashboard-area .upcoming-schedule .schedule-list .details {
+  text-transform: capitalize;
+  margin-left: 1.8em;
+}
+.wrapper .content .main .dashboard-area .upcoming-schedule .schedule-list .details .title {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #082b2f;
+  margin-bottom: 0.2em;
+}
+.wrapper .content .main .dashboard-area .upcoming-schedule .schedule-list .details .status {
+  font-weight: 500;
+  color: #627f83;
+}
+.wrapper .content .main .dashboard-area .upcoming-schedule .schedule-list .time {
+  position: absolute;
+  right: 0;
+  top: 0.5em;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #627f83;
+}
+.wrapper .content .main .dashboard-area .upcoming-schedule .all-activity-btn {
+  display: inline-block;
+  background-color: #01565b;
+  color: #e2f297;
+  font-size: 1.1em;
+  padding: 0.8em 2.5em;
+  border-radius: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  box-shadow: 0 10px 26px rgba(1, 86, 91, 0.3);
+  margin-top: 1em;
+  text-transform: capitalize;
 }
 .wrapper .content .profile-area {
   height: 100vh;
