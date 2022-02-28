@@ -67,7 +67,6 @@ body {
   width: 100%;
 }
 .wrapper .content .main {
-  height: 100vh;
   padding: 2.5em 3em 0;
   border-right: 2px solid #ebf1f5;
 }
@@ -394,7 +393,6 @@ body {
   position: relative;
 }
 .wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days {
-  overflow: hidden;
   position: absolute;
   top: 1.75em;
   bottom: 0;
@@ -608,7 +606,174 @@ body {
   text-transform: capitalize;
 }
 .wrapper .content .profile-area {
-  height: 100vh;
+  height: 100%;
+  background-image: url("../assets/original.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2.5em;
+}
+.wrapper .content .profile-area .profile-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: initial;
+}
+.wrapper .content .profile-area .profile-nav button {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 2.3em;
+  width: 2.3em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: initial;
+}
+.wrapper .content .profile-area .profile-nav button img {
+  height: 0.8em;
+}
+.wrapper .content .profile-area .profile-data {
+  text-align: center;
+}
+.wrapper .content .profile-area .profile-data .avatar {
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 1.5em;
+  overflow: hidden;
+}
+.wrapper .content .profile-area .profile-data .name-data {
+  margin-top: 1em;
+  text-align: center;
+  color: #fafafa;
+}
+.wrapper .content .profile-area .profile-data .name-data .fullname {
+  font-size: 1.3em;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.wrapper .content .profile-area .profile-data .name-data .job-title {
+  display: block;
+  margin-top: 0.3em;
+  font-size: 0.95em;
+  color: rgba(255, 255, 255, 0.2);
+}
+.wrapper .content .profile-area .profile-data .name-data .job-title::first-letter {
+  text-transform: capitalize;
+}
+.wrapper .content .profile-area .profile-data .edit-btn {
+  margin-top: 2em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  padding: 12px 45px;
+  border-radius: 25px;
+}
+.wrapper .content .profile-area .profile-data .edit-btn img {
+  height: 1.3em;
+}
+.wrapper .content .profile-area .profile-data .edit-btn span {
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-left: 0.7em;
+}
+.wrapper .content .profile-area .work-hours {
+  margin-top: 2.6em;
+}
+.wrapper .content .profile-area .work-hours h3.title {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #fafafa;
+}
+.wrapper .content .profile-area .work-hours .timeframe {
+  margin: 0 auto;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: initial;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.7em;
+  border-radius: 1em;
+  width: fit-content;
+}
+.wrapper .content .profile-area .work-hours .timeframe .time-data {
+  padding: 8px 24px;
+  border-radius: 0.75em;
+}
+.wrapper .content .profile-area .work-hours .timeframe .time-data span {
+  display: block;
+}
+.wrapper .content .profile-area .work-hours .timeframe .time-data .title {
+  text-transform: capitalize;
+  font-size: 0.775em;
+  font-weight: 500;
+  color: #fafafa;
+}
+.wrapper .content .profile-area .work-hours .timeframe .time-data .time-assigned {
+  font-size: 1.125em;
+  font-weight: 700;
+  color: #edf6fb;
+}
+.wrapper .content .profile-area .work-hours .timeframe .time-data:first-child {
+  background-color: #fafafa;
+  margin-right: 1.7em;
+  position: relative;
+}
+.wrapper .content .profile-area .work-hours .timeframe .time-data:first-child .title {
+  color: #627f83;
+}
+.wrapper .content .profile-area .work-hours .timeframe .time-data:first-child .time-assigned {
+  font-size: 1.125em;
+  font-weight: 600;
+  color: #01565b;
+}
+.wrapper .content .profile-area .work-hours .timeframe .time-data:first-child::after {
+  content: "";
+  display: block;
+  background-color: #fafafa;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  transform: translate(0, -50%) rotate(45deg) skew(14deg, 14deg);
+  border-radius: 4px;
+}
+.wrapper .content .profile-area .city {
+  text-align: center;
+  margin-top: 4em;
+  color: #fafafa;
+}
+.wrapper .content .profile-area .city .city-name {
+  font-size: 2.4em;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 0.2em;
+}
+.wrapper .content .profile-area .city .grp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: initial;
+  font-size: 0.9em;
+  opacity: 0.6;
+}
+.wrapper .content .profile-area .city .grp .place {
+  text-transform: capitalize;
+}
+.wrapper .content .profile-area .city .grp .bullet {
+  margin: 0 10px;
+  background-color: #fafafa;
+  width: 0.3em;
+  height: 0.3em;
+  border-radius: 50%;
+  display: block;
+}
+.wrapper .content .profile-area .city .grp .timezone {
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=main.css.map */

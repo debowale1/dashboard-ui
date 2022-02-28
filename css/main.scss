@@ -92,7 +92,6 @@ body {
   .content {
     width: 100%;
     .main {
-      height: 100vh;
       padding: 2.5em 3em 0;
       border-right: 2px solid $lighter-grey;
 
@@ -453,7 +452,7 @@ body {
             }
 
             .graph-days {
-              overflow: hidden;
+              // overflow: hidden;
               position: absolute;
               top: 1.75em;
               bottom: 0;
@@ -556,18 +555,6 @@ body {
                       transform: translate(-50%, 0);
                       z-index: 99;
                     }
-
-                    // .inner {
-                    //   position: absolute;
-                    //   bottom: 0;
-                    //   height: 100%;
-                    //   width: inherit;
-                    //   background: linear-gradient(
-                    //     0deg,
-                    //     $light-green,
-                    //     transparent
-                    //   );
-                    // }
                   }
                 }
 
@@ -701,7 +688,188 @@ body {
       }
     }
     .profile-area {
-      height: 100vh;
+      height: 100%;
+      background-image: url('../assets/original.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 2.5em;
+
+      .profile-nav {
+        @include setFlex(space-between, center, initial);
+
+        button {
+          background-color: rgba(255, 255, 255, 0.2);
+          height: 2.3em;
+          width: 2.3em;
+          border-radius: 50%;
+          @include setFlex(center, center, initial);
+
+          img {
+            height: 0.8em;
+          }
+        }
+      }
+
+      .profile-data {
+        text-align: center;
+        .avatar {
+          width: 5em;
+          height: 5em;
+          border-radius: 50%;
+          margin: 0 auto;
+          margin-top: 1.5em;
+          overflow: hidden;
+        }
+
+        .name-data {
+          margin-top: 1em;
+          text-align: center;
+          color: $background-white;
+
+          .fullname {
+            font-size: 1.3em;
+            font-weight: 600;
+            text-transform: capitalize;
+          }
+
+          .job-title {
+            display: block;
+            margin-top: 0.3em;
+            font-size: 0.95em;
+            color: rgba(255, 255, 255, 0.2);
+
+            &::first-letter {
+              text-transform: capitalize;
+            }
+          }
+        }
+
+        .edit-btn {
+          margin-top: 2em;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $background-white;
+          padding: 12px 45px;
+          border-radius: 25px;
+
+          img {
+            height: 1.3em;
+          }
+
+          span {
+            text-transform: capitalize;
+            font-weight: 600;
+            margin-left: 0.7em;
+          }
+        }
+      }
+
+      .work-hours {
+        margin-top: 2.6em;
+
+        h3.title {
+          text-align: center;
+          font-size: 1.1em;
+          font-weight: 500;
+          color: $background-white;
+        }
+
+        .timeframe {
+          margin: 0 auto;
+          margin-top: 1em;
+          @include setFlex(center, center, initial);
+          background-color: rgba(255, 255, 255, 0.2);
+          padding: 0.7em;
+          border-radius: 1em;
+          width: fit-content;
+
+          .time-data {
+            padding: 8px 24px;
+            border-radius: 0.75em;
+            span {
+              display: block;
+            }
+            .title {
+              text-transform: capitalize;
+              font-size: 0.775em;
+              font-weight: 500;
+              color: $background-white;
+            }
+
+            .time-assigned {
+              font-size: 1.125em;
+              font-weight: 700;
+              color: $off-blue;
+            }
+
+            &:first-child {
+              background-color: $background-white;
+              margin-right: 1.7em;
+              position: relative;
+
+              .title {
+                color: $primary-text;
+              }
+
+              .time-assigned {
+                font-size: 1.125em;
+                font-weight: 600;
+                color: $dark-blue;
+              }
+
+              &::after {
+                content: '';
+                display: block;
+                background-color: $background-white;
+                width: 32px;
+                height: 32px;
+                position: absolute;
+                right: -12px;
+                top: 50%;
+                transform: translate(0, -50%) rotate(45deg) skew(14deg, 14deg);
+                border-radius: 4px;
+              }
+            }
+          }
+        }
+      }
+
+      .city {
+        text-align: center;
+        margin-top: 4em;
+        color: $background-white;
+
+        .city-name {
+          font-size: 2.4em;
+          font-weight: 500;
+          text-transform: capitalize;
+          margin-bottom: 0.2em;
+        }
+
+        .grp {
+          @include setFlex(center, center, initial);
+          font-size: 0.9em;
+          opacity: 0.6;
+
+          .place {
+            text-transform: capitalize;
+          }
+
+          .bullet {
+            margin: 0 10px;
+            background-color: $background-white;
+            width: 0.3em;
+            height: 0.3em;
+            border-radius: 50%;
+            display: block;
+          }
+
+          .timezone {
+            text-transform: uppercase;
+          }
+        }
+      }
     }
   }
 }
