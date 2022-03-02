@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500;600;700&display=swap');
 html {
   font-size: 16px;
 }
 
 body {
   background-color: #fafafa;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
 }
 
 .wrapper {
@@ -71,7 +71,7 @@ body {
   border-right: 2px solid #ebf1f5;
 }
 .wrapper .content .main header .title h1 {
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
   font-size: 2.55em;
   font-weight: 600;
   text-transform: capitalize;
@@ -79,7 +79,7 @@ body {
   color: #082b2f;
 }
 .wrapper .content .main header .title span {
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
   font-size: 1em;
   font-weight: 500;
   display: block;
@@ -121,31 +121,67 @@ body {
   box-sizing: border-box;
   box-shadow: 0 6px 10px rgba(1, 86, 91, 0.05);
 }
-.wrapper .content .main .dashboard-area .productivity-listing .pro-bar:nth-child(2) {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .productivity-listing
+  .pro-bar:nth-child(2) {
   background-color: #5aba8a;
   color: #fafafa;
 }
-.wrapper .content .main .dashboard-area .productivity-listing .pro-bar:nth-child(2) .chart svg {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .productivity-listing
+  .pro-bar:nth-child(2)
+  .chart
+  svg {
   fill: #e2f297;
   transform: scale(-1, 1);
 }
-.wrapper .content .main .dashboard-area .productivity-listing .pro-bar:nth-child(2) .time-area::before {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .productivity-listing
+  .pro-bar:nth-child(2)
+  .time-area::before {
   background-color: #e2f297;
 }
-.wrapper .content .main .dashboard-area .productivity-listing .pro-bar:nth-child(3) {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .productivity-listing
+  .pro-bar:nth-child(3) {
   background-color: #01565b;
   color: #fafafa;
 }
-.wrapper .content .main .dashboard-area .productivity-listing .pro-bar:nth-child(3) .chart svg {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .productivity-listing
+  .pro-bar:nth-child(3)
+  .chart
+  svg {
   fill: #e2f297;
   transform: scale(-1, 1) rotate(180deg);
 }
-.wrapper .content .main .dashboard-area .productivity-listing .pro-bar:nth-child(3) .time-area::before {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .productivity-listing
+  .pro-bar:nth-child(3)
+  .time-area::before {
   background-color: #627f83;
 }
 .wrapper .content .main .dashboard-area .percent-area {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: row;
   width: 50%;
@@ -182,7 +218,7 @@ body {
   color: #082b2f;
 }
 .wrapper .content .main .dashboard-area .percent-area .date-tag::after {
-  content: "";
+  content: '';
   display: block;
   height: 40px;
   width: 40px;
@@ -193,9 +229,15 @@ body {
   border-radius: 6px;
   transform: translate(0, -50%) rotate(45deg) skew(25deg, 25deg);
 }
-.wrapper .content .main .dashboard-area .percent-area .fancy-chart .chart-title {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .percent-area
+  .fancy-chart
+  .chart-title {
   text-transform: capitalize;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
   font-size: 0.875em;
   font-weight: 600;
 }
@@ -212,7 +254,14 @@ body {
   height: 1em;
   width: 5.6em;
 }
-.wrapper .content .main .dashboard-area .percent-area .fancy-chart .chart .percent-count {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .percent-area
+  .fancy-chart
+  .chart
+  .percent-count {
   display: block;
   position: relative;
   left: 1em;
@@ -238,18 +287,18 @@ body {
 }
 .wrapper .content .main .dashboard-area .time-area .grp .title {
   text-transform: capitalize;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
   font-size: 0.875em;
   font-weight: 600;
 }
 .wrapper .content .main .dashboard-area .time-area .grp .time {
   text-transform: capitalize;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
   font-size: 1.125em;
   font-weight: 700;
 }
 .wrapper .content .main .dashboard-area .time-area::before {
-  content: "";
+  content: '';
   display: block;
   height: 50%;
   width: 1px;
@@ -259,7 +308,7 @@ body {
   background-color: #5aba8a;
 }
 .wrapper .content .main .dashboard-area .h-title {
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
   font-size: 1.75em;
   font-weight: 600;
   color: #082b2f;
@@ -277,7 +326,13 @@ body {
   align-items: center;
   flex-direction: initial;
 }
-.wrapper .content .main .dashboard-area .monthly-statistics .statistics-chart svg {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .monthly-statistics
+  .statistics-chart
+  svg {
   fill: none;
   stroke: #01565b;
   stroke-width: 0.1em;
@@ -287,23 +342,47 @@ body {
   position: absolute;
   z-index: 99;
 }
-.wrapper .content .main .dashboard-area .monthly-statistics .statistics-chart svg:nth-child(2) {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .monthly-statistics
+  .statistics-chart
+  svg:nth-child(2) {
   stroke: #5aba8a;
   transform: rotate(35deg);
   z-index: 98;
 }
-.wrapper .content .main .dashboard-area .monthly-statistics .statistics-chart svg:nth-child(3) {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .monthly-statistics
+  .statistics-chart
+  svg:nth-child(3) {
   stroke: #e2f297;
   transform: rotate(0deg);
   z-index: 97;
 }
-.wrapper .content .main .dashboard-area .monthly-statistics .statistics-chart svg:nth-child(4) {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .monthly-statistics
+  .statistics-chart
+  svg:nth-child(4) {
   stroke: #edf6fb;
   transform: rotate(0deg);
   stroke-dasharray: 100px;
   z-index: 96;
 }
-.wrapper .content .main .dashboard-area .monthly-statistics .statistics-chart .decal-circle {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .monthly-statistics
+  .statistics-chart
+  .decal-circle {
   width: 4.5em;
   height: 4.5em;
   border-radius: 50%;
@@ -311,36 +390,85 @@ body {
   background-color: #e2f297;
   position: absolute;
 }
-.wrapper .content .main .dashboard-area .monthly-statistics .statistics-chart .rocket {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .monthly-statistics
+  .statistics-chart
+  .rocket {
   height: 5em;
   position: absolute;
   bottom: 1em;
 }
-.wrapper .content .main .dashboard-area .monthly-statistics .statistics-progress {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .monthly-statistics
+  .statistics-progress {
   display: flex;
   justify-content: space-between;
   align-items: initial;
   flex-direction: column;
   height: 9.3em;
 }
-.wrapper .content .main .dashboard-area .monthly-statistics .statistics-progress .stat .top-area {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .monthly-statistics
+  .statistics-progress
+  .stat
+  .top-area {
   display: flex;
   justify-content: space-between;
   align-items: initial;
   flex-direction: initial;
 }
-.wrapper .content .main .dashboard-area .monthly-statistics .statistics-progress .stat .top-area .stat-title {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .monthly-statistics
+  .statistics-progress
+  .stat
+  .top-area
+  .stat-title {
   color: #627f83;
   font-weight: 500;
 }
-.wrapper .content .main .dashboard-area .monthly-statistics .statistics-progress .stat .top-area .stat-percentage {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .monthly-statistics
+  .statistics-progress
+  .stat
+  .top-area
+  .stat-percentage {
   color: #082b2f;
   font-weight: 700;
 }
-.wrapper .content .main .dashboard-area .monthly-statistics .statistics-progress .stat .stat-line {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .monthly-statistics
+  .statistics-progress
+  .stat
+  .stat-line {
   margin-top: 0.35em;
 }
-.wrapper .content .main .dashboard-area .monthly-statistics .statistics-progress .stat .stat-line .outer {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .monthly-statistics
+  .statistics-progress
+  .stat
+  .stat-line
+  .outer {
   display: block;
   width: 100%;
   height: 0.4em;
@@ -348,18 +476,43 @@ body {
   background-color: #ebf1f5;
   overflow: hidden;
 }
-.wrapper .content .main .dashboard-area .monthly-statistics .statistics-progress .stat .stat-line .outer .inner {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .monthly-statistics
+  .statistics-progress
+  .stat
+  .stat-line
+  .outer
+  .inner {
   display: block;
   height: inherit;
   width: 40%;
   border-radius: 25px;
   background-color: #5aba8a;
 }
-.wrapper .content .main .dashboard-area .monthly-statistics .statistics-progress .stat:nth-child(2) .outer .inner {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .monthly-statistics
+  .statistics-progress
+  .stat:nth-child(2)
+  .outer
+  .inner {
   width: 80%;
   background-color: #01565b;
 }
-.wrapper .content .main .dashboard-area .monthly-statistics .statistics-progress .stat:nth-child(3) .outer .inner {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .monthly-statistics
+  .statistics-progress
+  .stat:nth-child(3)
+  .outer
+  .inner {
   width: 25%;
   background-color: #e2f297;
 }
@@ -372,32 +525,69 @@ body {
   margin-top: 4em;
   height: 27.9em;
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart table {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  table {
   height: 25.6em;
   position: relative;
   left: 60px;
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart table thead .graph-time th {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  table
+  thead
+  .graph-time
+  th {
   position: relative;
   text-align: left;
   left: -20px;
   bottom: 1.75em;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
   font-size: 0.9em;
   font-weight: 600;
   color: #627f83;
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart table tbody .graph-col .bar {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  table
+  tbody
+  .graph-col
+  .bar {
   width: 5em;
   border-left: 2px solid #ebf1f5;
   position: relative;
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  .graph-days {
   position: absolute;
   top: 1.75em;
   bottom: 0;
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  .graph-days
+  .g-day {
   height: 2.5em;
   margin-bottom: 1.4em;
   display: flex;
@@ -405,23 +595,56 @@ body {
   align-items: center;
   flex-direction: initial;
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day .title {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  .graph-days
+  .g-day
+  .title {
   width: 2.2em;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
   font-size: 0.9em;
   font-weight: 500;
   color: #627f83;
   text-transform: capitalize;
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day .title.active {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  .graph-days
+  .g-day
+  .title.active {
   font-weight: 700;
   color: #01565b;
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day .tag {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  .graph-days
+  .g-day
+  .tag {
   position: relative;
   left: 1.65em;
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day .tag .content {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  .graph-days
+  .g-day
+  .tag
+  .content {
   background-color: #e2f297;
   height: 3em;
   padding: 0 2em;
@@ -432,15 +655,35 @@ body {
   text-align: center;
   border-radius: 0.8em;
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day .tag .content .tag-title {
-  font-family: "Kumbh Sans", sans-serif;
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  .graph-days
+  .g-day
+  .tag
+  .content
+  .tag-title {
+  font-family: 'Kumbh Sans', sans-serif;
   font-size: 0.9em;
   font-weight: 600;
   color: #01565b;
   position: relative;
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day .tag .content .tag-title::before {
-  content: "";
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  .graph-days
+  .g-day
+  .tag
+  .content
+  .tag-title::before {
+  content: '';
   position: absolute;
   width: 0.4em;
   height: 0.4em;
@@ -451,8 +694,17 @@ body {
   display: block;
   background-color: #01565b;
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day .tag .content::after {
-  content: "";
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  .graph-days
+  .g-day
+  .tag
+  .content::after {
+  content: '';
   display: block;
   width: 28px;
   height: 28px;
@@ -463,7 +715,16 @@ body {
   top: 50%;
   transform: translate(0, -50%) rotate(45deg) skew(5deg, 5deg);
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day .tag .tag-stroke {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  .graph-days
+  .g-day
+  .tag
+  .tag-stroke {
   height: 16.3em;
   background: linear-gradient(0deg, #e2f297, #01565b);
   width: 2px;
@@ -471,8 +732,17 @@ body {
   right: 45%;
   top: 4.5em;
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day .tag .tag-stroke::before {
-  content: "";
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  .graph-days
+  .g-day
+  .tag
+  .tag-stroke::before {
+  content: '';
   width: 0.55em;
   height: 0.55em;
   border-radius: 50%;
@@ -484,8 +754,17 @@ body {
   transform: translate(-50%, 0);
   z-index: 99;
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day .tag .tag-stroke::after {
-  content: "";
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  .graph-days
+  .g-day
+  .tag
+  .tag-stroke::after {
+  content: '';
   width: 1.4em;
   height: 1.4em;
   border: 1px solid #01565b;
@@ -498,49 +777,181 @@ body {
   transform: translate(-50%, 0);
   z-index: 99;
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day:nth-child(4) .tag {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  .graph-days
+  .g-day:nth-child(4)
+  .tag {
   left: 16.7em;
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day:nth-child(4) .tag .content {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  .graph-days
+  .g-day:nth-child(4)
+  .tag
+  .content {
   background-color: #5aba8a;
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day:nth-child(4) .tag .content::after {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  .graph-days
+  .g-day:nth-child(4)
+  .tag
+  .content::after {
   background-color: #5aba8a;
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day:nth-child(4) .tag .tag-title {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  .graph-days
+  .g-day:nth-child(4)
+  .tag
+  .tag-title {
   color: #fafafa;
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day:nth-child(4) .tag .tag-title::before {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  .graph-days
+  .g-day:nth-child(4)
+  .tag
+  .tag-title::before {
   background-color: #fafafa;
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day:nth-child(5) .tag {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  .graph-days
+  .g-day:nth-child(5)
+  .tag {
   left: 11em;
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day:nth-child(5) .tag .content {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  .graph-days
+  .g-day:nth-child(5)
+  .tag
+  .content {
   background-color: #01565b;
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day:nth-child(5) .tag .content::after {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  .graph-days
+  .g-day:nth-child(5)
+  .tag
+  .content::after {
   background-color: #01565b;
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day:nth-child(5) .tag .tag-title {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  .graph-days
+  .g-day:nth-child(5)
+  .tag
+  .tag-title {
   color: #e2f297;
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day:nth-child(5) .tag .tag-title::before {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  .graph-days
+  .g-day:nth-child(5)
+  .tag
+  .tag-title::before {
   background-color: #e2f297;
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day:nth-child(7) .tag {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  .graph-days
+  .g-day:nth-child(7)
+  .tag {
   left: 21.6em;
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day:nth-child(7) .tag .content {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  .graph-days
+  .g-day:nth-child(7)
+  .tag
+  .content {
   background-color: #edf6fb;
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day:nth-child(7) .tag .content::after {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  .graph-days
+  .g-day:nth-child(7)
+  .tag
+  .content::after {
   background-color: #edf6fb;
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day:nth-child(7) .tag .tag-title {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  .graph-days
+  .g-day:nth-child(7)
+  .tag
+  .tag-title {
   color: #01565b;
 }
-.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day:nth-child(7) .tag .tag-title::before {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-activity
+  .activity-chart
+  .graph-days
+  .g-day:nth-child(7)
+  .tag
+  .tag-title::before {
   background-color: #01565b;
 }
 .wrapper .content .main .dashboard-area .upcoming-schedule {
@@ -552,7 +963,13 @@ body {
 .wrapper .content .main .dashboard-area .upcoming-schedule .schedule-list {
   margin-top: 4em;
 }
-.wrapper .content .main .dashboard-area .upcoming-schedule .schedule-list .schedule {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-schedule
+  .schedule-list
+  .schedule {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -560,30 +977,71 @@ body {
   position: relative;
   margin-bottom: 2.7em;
 }
-.wrapper .content .main .dashboard-area .upcoming-schedule .schedule-list .schedule .icon {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-schedule
+  .schedule-list
+  .schedule
+  .icon {
   border: 2px solid #e0e0e0;
   display: inline-block;
   border-radius: 50%;
   padding: 0.7em;
 }
-.wrapper .content .main .dashboard-area .upcoming-schedule .schedule-list .schedule .icon img {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-schedule
+  .schedule-list
+  .schedule
+  .icon
+  img {
   height: 1.8em;
 }
-.wrapper .content .main .dashboard-area .upcoming-schedule .schedule-list .details {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-schedule
+  .schedule-list
+  .details {
   text-transform: capitalize;
   margin-left: 1.8em;
 }
-.wrapper .content .main .dashboard-area .upcoming-schedule .schedule-list .details .title {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-schedule
+  .schedule-list
+  .details
+  .title {
   font-size: 1.3em;
   font-weight: 600;
   color: #082b2f;
   margin-bottom: 0.2em;
 }
-.wrapper .content .main .dashboard-area .upcoming-schedule .schedule-list .details .status {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-schedule
+  .schedule-list
+  .details
+  .status {
   font-weight: 500;
   color: #627f83;
 }
-.wrapper .content .main .dashboard-area .upcoming-schedule .schedule-list .time {
+.wrapper
+  .content
+  .main
+  .dashboard-area
+  .upcoming-schedule
+  .schedule-list
+  .time {
   position: absolute;
   right: 0;
   top: 0.5em;
@@ -607,7 +1065,7 @@ body {
 }
 .wrapper .content .profile-area {
   height: 100%;
-  background-image: url("../assets/original.jpg");
+  background-image: url('../assets/original.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   padding: 2.5em;
@@ -658,7 +1116,12 @@ body {
   font-size: 0.95em;
   color: rgba(255, 255, 255, 0.2);
 }
-.wrapper .content .profile-area .profile-data .name-data .job-title::first-letter {
+.wrapper
+  .content
+  .profile-area
+  .profile-data
+  .name-data
+  .job-title::first-letter {
   text-transform: capitalize;
 }
 .wrapper .content .profile-area .profile-data .edit-btn {
@@ -712,7 +1175,13 @@ body {
   font-weight: 500;
   color: #fafafa;
 }
-.wrapper .content .profile-area .work-hours .timeframe .time-data .time-assigned {
+.wrapper
+  .content
+  .profile-area
+  .work-hours
+  .timeframe
+  .time-data
+  .time-assigned {
   font-size: 1.125em;
   font-weight: 700;
   color: #edf6fb;
@@ -722,16 +1191,33 @@ body {
   margin-right: 1.7em;
   position: relative;
 }
-.wrapper .content .profile-area .work-hours .timeframe .time-data:first-child .title {
+.wrapper
+  .content
+  .profile-area
+  .work-hours
+  .timeframe
+  .time-data:first-child
+  .title {
   color: #627f83;
 }
-.wrapper .content .profile-area .work-hours .timeframe .time-data:first-child .time-assigned {
+.wrapper
+  .content
+  .profile-area
+  .work-hours
+  .timeframe
+  .time-data:first-child
+  .time-assigned {
   font-size: 1.125em;
   font-weight: 600;
   color: #01565b;
 }
-.wrapper .content .profile-area .work-hours .timeframe .time-data:first-child::after {
-  content: "";
+.wrapper
+  .content
+  .profile-area
+  .work-hours
+  .timeframe
+  .time-data:first-child::after {
+  content: '';
   display: block;
   background-color: #fafafa;
   width: 32px;
